@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="VerySoft CRM">
+    <title>Login In</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/user.css" rel="stylesheet" />
+    <link href="assets/img/favicon.png" rel="shortcut icon" />
+  </head>
+
+  <body class="container-fluid no-gutters" id="body">
+    <div class="container-fluid d-flex justify-content-center vh-100 p-0 no-gutters">
+        <div class="col-lg-6 col-md-6 loginImg">
+             <!-- <img src=""> -->
+            <div class="bg-overlay"></div>
+            <video src="video/earth.mp4" autoplay muted loop></video>
+
+        </div>
+        <div class="col-lg-6 col-md-6  d-flex justify-content-center align-self-center animate__animated animate__fadeInUp">
+            <div>    
+              <div id="loginDialog" class="p-5" >
+                <div class="logo"></div>
+                <h4>Welcome to e-very</h4>
+                <span>Sign in to your account.</span>
+                
+                <form action="/index.html"  class="mt-5">
+                  <div class="row">
+                   <div class="col-md-12">
+                    <div class="form-group col-md-12 mb-4">
+                        <input type="email" class="form-control input-lg w-100" id="email" aria-describedby="emailHelp" placeholder="Username">
+                      </div>
+      
+                      <div class="form-group col-md-12 ">
+                        <input type="password" class="form-control input-lg w-100" id="password" placeholder="Password">
+                      </div>
+      
+                   </div>
+                    <div class="col-md-12 mt-4">
+                      <div class="d-flex my-2 justify-content-between">
+        
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Keep me signed in
+                            </label>
+                          </div>
+                        <p><a class="text-blue" href="forgot.html">Forgot Password?</a></p>
+                      </div>
+    
+                      <button type="submit" class="btn btn-lg submit btn-block mb-4 w-25">Sign In</button>
+    
+                      <p>Don't have an account yet ?
+                        <a class="text-blue" href="#">Sign Up</a>
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

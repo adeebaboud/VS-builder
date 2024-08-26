@@ -1,0 +1,2028 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="VerySoft CRM">
+    <title>VerySoft | Orders </title>
+
+    <link href="img/favicon.png" rel="shortcut icon" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500"
+        rel="stylesheet" />
+        <link href="https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="plugins/simplebar/simplebar.css" rel="stylesheet" />
+    <link href="plugins/nprogress/nprogress.css" rel="stylesheet" />
+    <link href='plugins/daterangepicker/daterangepicker.css' rel='stylesheet'>
+    <link href='plugins/toastr/toastr.min.css' rel='stylesheet'>
+    <link id="sleek-css" rel="stylesheet" href="css/sleek.css" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <script src="plugins/nprogress/nprogress.js"></script>
+
+
+</head>
+
+<body class="header-fixed sidebar-fixed sidebar-dark header-light" id="body">
+<div class="bs-canvas-overlay bs-canvas-anim bg-dark position-fixed w-100 h-100"></div>
+    <script>
+        NProgress.configure({ showSpinner: false });
+        NProgress.start();
+    </script>
+
+    <!-- <div id="toaster"></div> -->
+
+
+    <div class="wrapper">
+
+        <aside class="left-sidebar bg-sidebar animate__animated animate__fadeIn">
+
+
+            <div class="sidebar_logo"><svg width="50" height="57" viewBox="0 0 50 57" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3077 26.6667H1L12.0769 56H40.3846L49 35.2222V1L25.6154 54.7778L13.3077 26.6667Z"
+                        stroke="white" />
+                </svg>
+            </div>
+
+            <div id="sidebar" class="sidebar sidebar-with-footer">
+                <a href="index.html" title="VerySoft Dashboard">
+                    <div class="logo"></div>
+
+                </a>
+
+                <hr>
+
+                <div class="designer">
+                    <div class="d-flex flex-row bd-highlight mb-3 mt-3">
+                        <div class="p-2 bd-highlight">
+                            <icon class="nameBox">D</icon>
+                        </div>
+                        <div class="p-2 bd-highlight"><b>Designer Panel</b></div>
+                        <div class="p-2 bd-highlight"><a href="#"><i class="mdi mdi-open-in-new"></i></a></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="" data-simplebar style="height: 100%;">
+                    <ul class="nav sidebar-inner" id="sidebar-menu">
+                        <li class="has-sub active expand">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                                data-target="#Anasayfa" aria-expanded="false" aria-controls="Anasayfa">
+                                <i class="mdi mdi-home-variant-outline"></i>
+                                <span class="nav-text">Anasayfa</span> <b class="caret"></b>
+                            </a>
+
+                            <ul class="collapse " id="Anasayfa" data-parent="#sidebar-menu">
+                                <div class="sub-menu">
+                                    <li class="active">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu 1</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu 2</span>
+                                            <span class="badge badge-success">Yeni</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="has-sub ">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                                data-target="#Siparişler" aria-expanded="false" aria-controls="Siparişler">
+                                <i class="mdi mdi-basket-outline"></i>
+                                <span class="nav-text">Siparişler</span> <b class="caret"></b>
+                            </a>
+
+                            <ul class="collapse " id="Siparişler" data-parent="#sidebar-menu">
+                                <div class="sub-menu">
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+
+
+                        <li class="has-sub ">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                                data-target="#Ürünler" aria-expanded="false" aria-controls="Ürünler">
+                                <i class="mdi mdi-tag-outline"></i>
+                                <span class="nav-text">Ürünler</span> <b class="caret"></b>
+                            </a>
+
+                            <ul class="collapse " id="Ürünler" data-parent="#sidebar-menu">
+                                <div class="sub-menu">
+
+
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu</span>
+
+                                        </a>
+                                    </li>
+
+                                    <li class="has-sub ">
+                                        <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                                            data-target="#buttons" aria-expanded="false" aria-controls="buttons">
+                                            <span class="nav-text">SubMenu Level 2</span> <b class="caret"></b>
+                                        </a>
+
+                                        <ul class="collapse " id="buttons">
+                                            <div class="sub-menu">
+                                                <li class="">
+                                                    <a href="#">SubMenu 1</a>
+                                                </li>
+
+                                                <li class="">
+                                                    <a href="#">SubMenu 2</a>
+                                                </li>
+
+                                                <li class="">
+                                                    <a href="#">SubMenu 3</a>
+                                                </li>
+
+                                                <li class="">
+                                                    <a href="#">SubMenu 4</a>
+                                                </li>
+
+                                                <li class="">
+                                                    <a href="#">SubMenu 5</a>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </li>
+
+
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="has-sub ">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                                data-target="#Pazarlama" aria-expanded="false" aria-controls="Pazarlama">
+                                <i class="mdi mdi-bullhorn-outline"></i>
+                                <span class="nav-text">Pazarlama</span> <b class="caret"></b>
+                            </a>
+
+                            <ul class="collapse " id="Pazarlama" data-parent="#sidebar-menu">
+                                <div class="sub-menu">
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu 1</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu 2</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="has-sub ">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                                data-target="#Müşteri" aria-expanded="false" aria-controls="Müşteri">
+                                <i class="mdi mdi-storefront"></i>
+                                <span class="nav-text">Müşteri & Bayi</span> <b class="caret"></b>
+                            </a>
+
+                            <ul class="collapse " id="Müşteri" data-parent="#sidebar-menu">
+                                <div class="sub-menu">
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu 1</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu 2</span>
+                                        </a>
+                                    </li>
+
+                                </div>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="has-sub ">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                                data-target="#İçerik" aria-expanded="false" aria-controls="İçerik">
+                                <i class="mdi mdi-clipboard-text-outline"></i>
+                                <span class="nav-text">İçerik</span> <b class="caret"></b>
+                            </a>
+
+                            <ul class="collapse " id="İçerik" data-parent="#sidebar-menu">
+                                <div class="sub-menu">
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="has-sub ">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                                data-target="#Ayarlar" aria-expanded="false" aria-controls="Ayarlar">
+                                <i class="mdi mdi-cog"></i>
+                                <span class="nav-text">Site Ayarları</span> <b class="caret"></b>
+                            </a>
+
+                            <ul class="collapse " id="Ayarlar" data-parent="#sidebar-menu">
+                                <div class="sub-menu">
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="has-sub ">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                                data-target="#Görünüm" aria-expanded="false" aria-controls="Görünüm">
+                                <i class="mdi mdi-draw"></i>
+                                <span class="nav-text">Görünüm</span> <b class="caret"></b>
+                            </a>
+
+                            <ul class="collapse " id="Görünüm" data-parent="#sidebar-menu">
+                                <div class="sub-menu">
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="has-sub ">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                                data-target="#Seo" aria-expanded="false" aria-controls="Seo">
+                                <i class="mdi mdi-card-search-outline"></i>
+                                <span class="nav-text">Seo</span> <b class="caret"></b>
+                            </a>
+                            <hr>
+                            <ul class="collapse " id="Seo" data-parent="#sidebar-menu">
+                                <div class="sub-menu">
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="has-sub ">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                                data-target="#Tahsilat" aria-expanded="false" aria-controls="Tahsilat">
+                                <i class="mdi mdi-image-filter-none"></i>
+                                <span class="nav-text">Tahsilat</span> <b class="caret"></b>
+                            </a>
+
+                            <ul class="collapse " id="Tahsilat" data-parent="#sidebar-menu">
+                                <div class="sub-menu ">
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu</span>
+                                        </a>
+                                    </li>
+
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="has-sub ">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                                data-target="#Eklentiler" aria-expanded="false" aria-controls="Eklentiler">
+                                <i class="mdi mdi-view-grid-plus"></i>
+                                <span class="nav-text">Eklentiler</span> <b class="caret"></b>
+                            </a>
+
+                            <ul class="collapse " id="Eklentiler" data-parent="#sidebar-menu">
+                                <div class="sub-menu">
+
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="has-sub ">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                                data-target="#Entegrasyon" aria-expanded="false" aria-controls="Entegrasyon">
+                                <i class="mdi mdi-file-code-outline"></i>
+                                <span class="nav-text">Entegrasyon</span> <b class="caret"></b>
+                            </a>
+
+                            <ul class="collapse " id="Entegrasyon" data-parent="#sidebar-menu">
+                                <div class="sub-menu">
+
+
+                                    <li class="">
+                                        <a class="sidenav-item-link" href="#">
+                                            <span class="nav-text">SubMenu</span>
+                                        </a>
+                                    </li>
+
+
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </aside>
+
+
+        <div class="page-wrapper">
+
+            <!-- Header -->
+            <header class="main-header " id="header">
+                <nav class="navbar navbar-static-top navbar-expand-lg">
+                    <!-- Sidebar toggle button -->
+                    <button id="sidebar-toggler" class="sidebar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                    <!-- search form -->
+                    <p class="title d-none d-lg-inline-block">Siparişler</p>
+                    <div class="search-form d-none d-lg-inline-block float-end">
+                        <div class="input-group">
+                            <button type="button" name="search" id="search-btn" class="btn btn-flat">
+                                <i class="mdi mdi-magnify"></i>
+                            </button>
+                            <input type="text" name="query" id="search-input" class="form-control" placeholder="Search"
+                                autofocus autocomplete="off" />
+                        </div>
+                        <div id="search-results-container">
+                            <ul id="search-results"></ul>
+                        </div>
+                    </div>
+
+                    <div class="navbar-right ">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown notifications-menu custom-dropdown">
+                                <button class="dropdown-toggle notify-toggler custom-dropdown-toggler">
+                                    <i class="mdi mdi-bell-outline"></i>
+                                </button>
+
+                                <div class="card card-default dropdown-notify dropdown-menu-right mb-0">
+                                    <div class="card-header card-header-border-bottom px-3">
+                                        <h2>Bildirimler</h2>
+                                    </div>
+
+                                    <div class="card-body px-0 py-3">
+                                        <ul class="nav nav-tabs nav-style-border p-0 " id="myTab" role="tablist">
+                                            <li class="nav-item mx-3 my-0 py-0">
+                                                <a class="nav-link active pb-3" id="home2-tab" data-toggle="tab"
+                                                    href="#home2" role="tab" aria-controls="home2"
+                                                    aria-selected="true">Okunmamış Bildirimler</a>
+                                            </li>
+
+                                            <li class="nav-item mx-3 my-0 py-0">
+                                                <a class="nav-link pb-3" id="profile2-tab" data-toggle="tab"
+                                                    href="#profile2" role="tab" aria-controls="profile2"
+                                                    aria-selected="false">Tüm Bildirimler</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content" id="myTabContent3">
+                                            <div class="tab-pane fade show active" id="home2" role="tabpanel"
+                                                aria-labelledby="home2-tab">
+                                                <ul class="list-unstyled" data-simplebar style="height: 360px">
+                                                    <li>
+                                                        <a href="javscript:void(0)"
+                                                            class="media media-message media-notification">
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-center mr-3 media-icon iconbox-45 bg-primary text-white">
+                                                                <i class="mdi mdi-message-outline  font-size-20"></i>
+                                                            </div>
+
+                                                            <div class="media-body d-flex ">
+                                                                <div class="message-contents">
+                                                                    <h4 class="title">Yeni Sipariş Geldi!</h4>
+                                                                    <span
+                                                                        class="font-size-12 font-weight-medium text-secondary">
+                                                                        <i class="mdi mdi-clock-outline"></i> 8 Saat
+                                                                        Önce
+                                                                    </span>
+                                                                    <p class="last-msg font-size-14">#1223234 Numaralı
+                                                                        siparişin detaylarını gör</p>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="javscript:void(0)"
+                                                            class="media media-message media-notification">
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-center mr-3 media-icon iconbox-45 bg-danger text-white">
+                                                                <i class="mdi mdi-playlist-check font-size-20"></i>
+                                                            </div>
+
+                                                            <div class="media-body d-flex justify-content-between">
+                                                                <div class="message-contents">
+                                                                    <h4 class="title">Ürününe Yorum Var</h4>
+                                                                    <span
+                                                                        class="font-size-12 font-weight-medium text-secondary">
+                                                                        <i class="mdi mdi-clock-outline"></i> 2 Saat
+                                                                        Önce
+                                                                    </span>
+                                                                    <p class="last-msg font-size-14">Lavantalı Krem
+                                                                        300ml ürününe bir kullanıcı yorum yaptı.</p>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="javscript:void(0)"
+                                                            class="media media-message media-notification">
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-center mr-3 media-icon iconbox-45 bg-info text-white">
+                                                                <i class="mdi mdi-help  font-size-20"></i>
+                                                            </div>
+
+                                                            <div class="media-body d-flex ">
+                                                                <div class="message-contents">
+                                                                    <h4 class="title">Ürününe Bir Soru Var.</h4>
+                                                                    <span
+                                                                        class="font-size-12 font-weight-medium text-secondary">
+                                                                        <i class="mdi mdi-clock-outline"></i> 8 Saat
+                                                                        Önce
+                                                                    </span>
+                                                                    <p class="last-msg font-size-14">#1223234 Numaralı
+                                                                        siparişin detaylarını gör</p>
+                                                                    <p class="last-msg font-size-14 mt-2">@musteri1:
+                                                                        <span>Çok güzel bir ürün. Lavanta kokusuna
+                                                                            bayılırım.</span>
+                                                                    </p>
+                                                                    <div class="input-group mt-2">
+                                                                        <span class="input-group-text bg-white ">
+                                                                            <i
+                                                                                class="mdi mdi-emoticon-outline border-0"></i>
+                                                                        </span>
+                                                                        <input type="search"
+                                                                            class="form-control border-start-0"
+                                                                            placeholder="Cevapla">
+
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="tab-pane fade" id="profile2" role="tabpanel"
+                                                aria-labelledby="profile2-tab">
+                                                <ul class="list-unstyled" data-simplebar style="height: 360px">
+                                                    <li>
+                                                        <a href="javscript:void(0)"
+                                                            class="media media-message media-notification">
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-center mr-3 media-icon iconbox-45 bg-info text-white">
+                                                                <i class="mdi mdi-message-outline  font-size-20"></i>
+                                                            </div>
+
+                                                            <div class="media-body d-flex justify-content-between">
+                                                                <div class="message-contents">
+                                                                    <h4 class="title">Yeni Sipariş Geldi!</h4>
+                                                                    <span
+                                                                        class="font-size-12 font-weight-medium text-secondary">
+                                                                        <i class="mdi mdi-clock-outline"></i> 8 Saat
+                                                                        Önce
+                                                                    </span>
+                                                                    <p class="last-msg font-size-14">#1223234 Numaralı
+                                                                        siparişin detaylarını gör</p>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="javscript:void(0)"
+                                                            class="media media-message media-notification">
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-center mr-3 media-icon iconbox-45 bg-success text-white">
+                                                                <i class="mdi mdi-playlist-check font-size-20"></i>
+                                                            </div>
+
+                                                            <div class="media-body d-flex justify-content-between">
+                                                                <div class="message-contents">
+                                                                    <h4 class="title">Ürününe Yorum Var</h4>
+                                                                    <span
+                                                                        class="font-size-12 font-weight-medium text-secondary">
+                                                                        <i class="mdi mdi-clock-outline"></i> 2 Saat
+                                                                        Önce
+                                                                    </span>
+                                                                    <p class="last-msg font-size-14">Lavantalı Krem
+                                                                        300ml ürününe bir kullanıcı yorum yaptı.</p>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </li>
+                            <li class="dropdown user-menu">
+                                <button href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                    <img src="img/user.png" class="user-image" alt="User Image" />
+                                    <span class="d-none d-lg-inline-block">Tunahan Bey</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="dropdown-header">
+                                        <img src="img/user.png" class="img-circle" alt="User Image" />
+                                        <div class="d-inline-block">
+                                            Tunahan Sirin <small class="pt-1">tunahan@verysoft.com.tr</small>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a href="user-profile.html">
+                                            <i class="mdi mdi-account"></i>Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="mdi mdi-information"></i> System Info</a>
+                                    </li>
+                                    <li class="right-sidebar-in">
+                                        <a href="javascript:0"> <i class="mdi mdi-help-circle"></i> Help </a>
+                                    </li>
+
+                                    <li class="dropdown-footer">
+                                        <a href="index.html"> <i class="mdi mdi-logout"></i> Log Out </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+<div class="row">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="orders col-md-6 d-none d-lg-block float-start">
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item activeli">
+                            <button class="data-filter" data-durum="">Tüm Satışlar</button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="data-filter" data-durum="Onay Sürecinde">Yeni Siparişler</button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="data-filter" data-durum="Hazırlanıyor">Hazırlanan</button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="data-filter" data-durum="Kargolandı">Kargolanan</button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="data-filter" data-durum="Teslim Edildi">Teslim Edilen</button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="data-filter" data-durum="İptal">İptal</button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="data-filter" data-durum="İade">İade</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 d-none d-lg-block float-end">
+                    <div class="orders me-2 float-end">
+                        <div class="float-end">
+                            <div class="form-group">
+                                <select class="form-control form-select" id="exportSelect">
+                                    <option hidden>Dışa Aktar</option>
+                                    <option value="CSV">CSV</option>
+                                    <option value="Excel">Excel</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card card-default">
+            <div class="card-header  d-block pt-3">
+                <div class="row">
+                    <div class="col-md-6 mt-2">
+                        <h2 id="page-title"></h2>
+                    </div>
+                    <div class="orders col-md-6 float-end">
+                        <div class="orders float-end">
+                            <div class="float-end">
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-secondary " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="mdi mdi-tune-vertical"></i>
+                                    </button>
+                                    <div class="dropdown-menu görünümü" aria-labelledby="dropdownMenu2">
+                                        <p class="mb-4">Sütun Görünümü</p>
+                                        <div class="ms-2 filter">
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlined11" checked="true">
+                                            <label class="btn btn-outline-secondary" for="btn-check-outlined11">Telefon</label>
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlined22">
+                                            <label class="btn btn-outline-secondary" for="btn-check-outlined22">Mail</label>
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlined33">
+                                            <label class="btn btn-outline-secondary" for="btn-check-outlined33">Ödeme Tipi</label>
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlined44">
+                                            <label class="btn btn-outline-secondary" for="btn-check-outlined44">Tutar</label>
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlined55">
+                                            <label class="btn btn-outline-secondary" for="btn-check-outlined55">Durum</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orders  me-2 float-end">
+                            <div class="float-end">
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-secondary " type="button"
+                                            id="dropdownMenu3" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        Add Filter
+                                    </button>
+
+                                    <div class="dropdown-menu fılter mt-2"
+                                         aria-labelledby="dropdownMenu3">
+                                        <h4 class="m-3">Filter</h4>
+                                        <hr>
+                                        <p class="m-3">Platform</p>
+                                        <div class="ms-2 filter">
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlined" checked="true">
+                                            <label class="btn btn-outline-secondary" for="btn-check-outlined">E-Very</label>
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlined2">
+                                            <label class="btn btn-outline-secondary" for="btn-check-outlined2">Trendyol</label>
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlined3">
+                                            <label class="btn btn-outline-secondary" for="btn-check-outlined3">Hepsiburada</label>
+                                        </div>
+                                        <p class="m-3">Sipariş Tarihi</p>
+                                        <ul class="list-group list-group-horizontal">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <div class="input-group mb-2">
+                                                        <div class="input-group-prepend">
+                                                                                <span class="input-group-text">
+                                                                                    <i
+                                                                                            class="mdi mdi-calendar-range"></i>
+                                                                                </span>
+                                                        </div>
+
+                                                        <input type="text"
+                                                               class="form-control date-range"
+                                                               name="dateRange" value=""
+                                                               placeholder="Date" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <div class="input-group mb-2">
+                                                        <div class="input-group-prepend">
+                                                                                <span class="input-group-text">
+                                                                                    <i
+                                                                                            class="mdi mdi-calendar-range"></i>
+                                                                                </span>
+                                                        </div>
+
+                                                        <input type="text"
+                                                               class="form-control date-range"
+                                                               name="dateRange" value=""
+                                                               placeholder="Date" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </ul>
+
+
+
+
+                                        <p class="m-3">Ödeme Yöntemi</p>
+                                        <ul class="list-group list-group-horizontal">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <select class="form-control form-select"
+                                                            id="exampleFormControlSelect3">
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                        <option>Option 4</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </ul>
+
+
+
+                                        <p class="m-3">Amount</p>
+
+                                        <div class="ms-2">
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlined4">
+                                            <label class="btn btn-outline-secondary" for="btn-check-outlined4">0-100 TL </label>
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlined5" checked="true">
+                                            <label class="btn btn-outline-secondary" for="btn-check-outlined5">100-1000 TL</label>
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlined6">
+                                            <label class="btn btn-outline-secondary" for="btn-check-outlined6">1000-10.000 TL</label>
+                                        </div>
+
+                                        <p class="m-3">Hediye Çeki</p>
+
+                                        <div class="ms-2">
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlined7">
+                                            <label class="btn btn-outline-secondary" for="btn-check-outlined7">Var</label>
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlined8" checked="true">
+                                            <label class="btn btn-outline-secondary" for="btn-check-outlined8">Yok</label>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orders me-2 float-end">
+                            <div class="float-end">
+                                <div class="form-group">
+                                    <select class="form-control form-select" id="sortSelect">
+                                        <option hidden>Sırala</option>
+                                        <option value="newest">Yeniden Eskiye</option>
+                                        <option value="oldest">Eskiden Yeniye</option>
+                                        <option value="alphabetical">Alfabetik</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orders me-2 float-end">
+                            <div class="float-end">
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text bg-light"><i class="mdi mdi-magnify"></i></span>
+                                        <input type="text" id="searchInput" class="form-control" placeholder="Ara">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body pt-1">
+                <div class="hoverable-data-table">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="orders col-md-6 float-start">
+                                <ul class="list-group list-group-horizontal">
+                                    <a href="javascript:void()">
+                                        <li class="list-group-item" data-toggle="modal" data-target="#updateBulkSaleStatusModal"><i class="mdi mdi-refresh"></i>
+                                            Toplu Durum Güncelle
+                                        </li>
+                                    </a>
+                                    <a href="javascript:void()" onclick="printTable();">
+                                        <li class="list-group-item"><i class="mdi mdi-printer"></i> Yazdır</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="list-group-item" data-toggle="modal" data-target="#exampleModalCenter"><i class="mdi mdi-plus-box"></i> E-Fatura</li>
+                                    </a>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <table id="vsTable" class="table table-hover nowrap " style="width:100%">
+                        <thead>
+                        <tr>
+                            <th class="columnSelect">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="selectAll">
+                                </div>
+                            </th>
+                            <th>Sipariş No. <a href="#"><i class="mdi mdi-arrow-up"></i></a></th>
+                            <th>Platform <a href="#"><i class="mdi mdi-arrow-up"></i></a></th>
+                            <th>Ad Soyad <a href="#"><i class="mdi mdi-arrow-up"></i></a></th>
+                            <th>Telefon <a href="#"><i class="mdi mdi-arrow-up"></i></a></th>
+                            <th>Mail <a href="#"><i class="mdi mdi-arrow-up"></i></a></th>
+                            <th>Ödeme Tipi <a href="#"><i class="mdi mdi-arrow-up"></i></a></th>
+                            <th>Tutar <a href="#"><i class="mdi mdi-arrow-up"></i></a></th>
+                            <th>Durum. <a href="#"><i class="mdi mdi-arrow-up"></i></a></th>
+                            <th class="actions">İşlem</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container">
+                    <ul class="pagination pagination-lg justify-content-center">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="#">
+    <li class="list-group-item" data-toggle="modal" data-target="#exampleModalCenter2"><i
+            class="mdi mdi-dock-window"></i>
+        Durum Güncelle
+        Modal</li>
+</a>
+<a href="#">
+    <li class="list-group-item" data-toggle="modal" data-target="#exampleModalCenter3"><i
+            class="mdi mdi-dock-window"></i>
+        SMS & E-posta Gönder Modal</li>
+</a>
+<a href="#">
+    <li class="list-group-item" data-toggle="modal" data-target="#exampleModalCenter4"><i
+            class="mdi mdi-dock-window"></i>
+        Sipariş Sözleşmeleri Modal</li>
+</a>
+<a href="#">
+    <li class="list-group-item" data-toggle="canvas" data-target="#bs-canvas-right" aria-expanded="false" aria-controls="bs-canvas-right"><i
+            class="mdi mdi-dock-window"></i>
+        Sipariş Detayı Modal</li>
+</a>
+
+<a href="#">
+    <li class="list-group-item"data-toggle="canvas" data-target="#bs-canvas-right2" aria-expanded="false" aria-controls="bs-canvas-right2"><i
+            class="mdi mdi-dock-window"></i>
+        Düzenle Modal</li>
+</a>
+ <!-- First Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-4">
+            <div class="modal-header">
+                <h5 class="modal-title text-black" id="exampleModalLongTitle">E-Fatura</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <p class="mb-3 text-black">Yazdırma Tipi</p>
+                        <select class="form-control form-select" id="exampleFormControlSelect3">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <p class="mb-3 text-black">Yazdırma Şablonu</p>
+                        <select class="form-control form-select" id="exampleFormControlSelect3">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <button type="button" class="btn btn-primary text-center m-2 modalbtn"
+                data-dismiss="modal">Yazdır</button>
+        </div>
+    </div>
+</div>
+<!-- End First Modal -->
+
+
+<!-- Second Modal -->
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-4">
+            <div class="modal-header">
+                <h5 class="modal-title text-black" id="exampleModalLongTitle">Durum Güncelle</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <p class="mb-3 text-black">Sipariş Durumu</p>
+                        <select class="form-control form-select" id="exampleFormControlSelect3">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                   <div class="col-lg-6  text-black">Müşteriye Bildirim Gönder</div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <div class="form-check form-switch d-flex justify-content-end">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+            </div>
+            <button type="button" class="btn btn-primary text-center m-2 modalbtn"
+                data-dismiss="modal">Güncelle</button>
+        </div>
+    </div>
+</div>
+
+<!-- End Second Modal -->
+
+<!-- Third Modal -->
+<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-4 text-black">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">SMS & E-posta Gönder</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8 mt-2 mb-4 ms-3 text-left">
+                        <p class="modalTitle mb-2"> SMS Gönder</p>
+                        <span>Ayarlar -> SMS Şablonları -> Sipariş Özel Aksiyonları ile yeni şablonlar
+                            ekleyebilirsiniz.</span>
+                    </div>
+                    <div class="col-md-3 text-right">
+                        <div class="form-group">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <p class="modalTitle mb-2">SMS Şablonu</p>
+                        <select class="form-control form-select" id="exampleFormControlSelect3">
+                            <option>Seçilmedi</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 mt-2 mb-4 ms-3 text-left">
+                        <p class="modalTitle mb-2"> E-Posta Gönder</p>
+                        <span>Ayarlar -> E-Posta Şablonları -> Sipariş Özel Aksiyonları ile yeni şablonlar
+                            ekleyebilirsiniz.</span>
+                    </div>
+                    <div class="col-md-3 text-right">
+                        <div class="form-group">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <p class="modalTitle mb-2">E-Posta Şablonu</p>
+                        <select class="form-control form-select" id="exampleFormControlSelect3">
+                            <option>Seçilmedi</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <button type="button" class="btn btn-primary text-center m-2 modalbtn"
+                data-dismiss="modal">Gönder</button>
+        </div>
+    </div>
+</div>
+
+<!-- End Third Modal -->
+
+<!-- Fourth Modal -->
+<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">SMS & E-posta Gönder</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8 mt-2 mb-4 ms-3 text-left">
+                        <p> SMS Gönder</p>
+                        <span>Ayarlar -> SMS Şablonları -> Sipariş Özel Aksiyonları ile yeni şablonlar
+                            ekleyebilirsiniz.</span>
+                    </div>
+                    <div class="col-md-3 text-right">
+                        <div class="form-group">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <p class="mb-3">SMS Şablonu</p>
+                        <select class="form-control form-select" id="exampleFormControlSelect3">
+                            <option>Seçilmedi</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 mt-2 mb-4 ms-3 text-left">
+                        <p> E-Posta Gönder</p>
+                        <span>Ayarlar -> E-Posta Şablonları -> Sipariş Özel Aksiyonları ile yeni şablonlar
+                            ekleyebilirsiniz.</span>
+                    </div>
+                    <div class="col-md-3 text-right">
+                        <div class="form-group">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <p class="mb-3">E-Posta Şablonu</p>
+                        <select class="form-control form-select" id="exampleFormControlSelect3">
+                            <option>Seçilmedi</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <button type="button" class="btn btn-primary text-center m-2 modalbtn"
+                data-dismiss="modal">Gönder</button>
+        </div>
+    </div>
+</div>
+<!-- End Fourth Modal -->
+<!-- Fifth Modal -->
+<div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
+        <div class="modal-content p-4">
+            <div class="modal-header">
+                <h5 class="modal-title text-black" id="exampleModalLongTitle">Sipariş Sözleşmeleri</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card-body">
+                    <ul class="nav nav-tabs nav-style-border pl-0 justify-content-between justify-content-lg-center p-0"
+                        id="myTab" role="tablist">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" id="home20-tab" data-toggle="tab" href="#home20"
+                                role="tab" aria-controls="home20" aria-selected="true">Mesafeli Sayış
+                                Sözleşmesi</a>
+                        </li>
+
+                        <li class="nav-item me-3">
+                            <a class="nav-link modalTitle" id="profile20-tab" data-toggle="tab" href="#profile20"
+                                role="tab" aria-controls="profile20" aria-selected="false">Ön Bilgilendirme
+                                Formu</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent3">
+                        <div class="tab-pane pt-3 fade show active" id="home20" role="tabpanel"
+                            aria-labelledby="home20-tab">
+
+                            <h4>Mesafeli Satış Sözleşmesi</h4>
+                            <br />
+                            <p><strong>1.TARAFLAR</strong></p>
+                            <p>İşbu Sözleşme aşağıdaki taraflar arasında aşağıda belirtilen hüküm ve şartlar
+                                çerçevesinde imzalanmıştır.</p>
+                                <br />
+                            <p><strong>A.</strong> 'ALICI'; (sözleşmede bundan sonra "ALICI" olarak
+                                anılacaktır)</p>
+                                <br />
+                            <p><strong>B.</strong> 'SATICI'; (sözleşmede bundan sonra "SATICI" olarak
+                                anılacaktır)</p>
+                                <br />
+                            <p><strong>AD-SOYAD:</strong> Ascan Gıda ve Mühendislik Yatırım Anonim Şirketi
+                            </p>
+                            <br />
+                            <p><strong>ADRES:</strong> Üniversite mahallesi civan sokak no:1/33 Avcılar
+                                İstanbul</p>
+                            <p>İş bu sözleşmeyi kabul etmekle ALICI, sözleşme konusu siparişi onayladığı
+                                takdirde sipariş konusu bedeli ve varsa kargo ücreti, vergi gibi belirtilen
+                                ek ücretleri ödeme yükümlülüğü altına gireceğini ve bu konuda
+                                bilgilendirildiğini peşinen kabul eder.</p>
+                                <br />
+                            <p><strong>2.TANIMLAR</strong></p>
+                            <p>İşbu sözleşmenin uygulanmasında ve yorumlanmasında aşağıda yazılı terimler
+                                karşılarındaki yazılı açıklamaları ifade edeceklerdir.</p>
+                        </div>
+
+                        <div class="tab-pane pt-3 fade" id="profile20" role="tabpanel"
+                            aria-labelledby="profile20-tab">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur.
+                            <div class="row mt-5">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Ürün Kodu</th>
+                                            <th scope="col">Ürün</th>
+                                            <th scope="col">Fiyat</th>
+                            
+                                            <th scope="col">Miktar</th>
+                                            <th scope="col">Tutar</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>3873846</td>
+                                            <td scope="row">Pasta Volkanı Pasta Maytabı 1 Adet (#70258)
+                                                <br />
+                                                Ürün Kodu:<br />
+                                                Barkod:
+                                            </td>
+                                            <td>18.49 TL</td>
+              
+                                            <td>1</td>
+                                            <td>18.49 TL</td>
+                                        </tr>
+                                        <tr class="border-white">
+                                            <td scope="row">
+                                                18.49 TL
+                                            </td>
+                                            <td></td>
+                                            <td colspan="100">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="border-top-0">Toplam:	</th>
+                                                            <th class="border-top-0">18.49 TL</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>Kargo</td>
+                                                        <td>18.49 TL</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>İndirim</td>
+                                                        <td>18.49 TL</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hediye çeki</td>
+                                                        <td>18.49 TL</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Genel Toplam</td>
+                                                        <td>18.49 TL</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+            <button type="button" class="btn btn-primary text-center m-2 modalbtn"
+                data-dismiss="modal">Kaydet</button>
+        </div>
+    </div>
+</div>
+<!-- End Fifth Modal -->
+<!-- Sixth Modal -->
+<div id="bs-canvas-right" class="bs-canvas bs-canvas-anim bs-canvas-right position-fixed bg-light h-100 nbocm" data-overlay="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
+        <div class="modal-content p-4">
+            <div class="modal-header text-black">
+                <div>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Sipariş Detayı</h5>
+                    <p>609529051 Nolu Sipariş Detayı</p>
+                </div>
+
+                <div class="float-end">
+                    <button type="button" class="btn btn-primary text-center m-2 modalsiparişbtn"
+                        data-dismiss="modal">Siparişi Teslim Et</button>
+                    <button type="button" class="btn btn-sipariş-secondery text-center m-2 "
+                        data-dismiss="modal">Siparişi İptal Et</button>
+
+                    <button type="button"  class="bs-canvas-close close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+
+
+            </div>
+            <div class="modal-body text-black">
+                <div class="row">
+                    <div class="col-md-12 p-4 ">
+                        <span class="mdi mdi-cart-outline ocIcons"></span><b class="ocTitle"> Sepet</b>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="border-top-0">Ürün</th>
+                                <th scope="col"class="border-top-0">Fiyat</th>
+                                <th scope="col" class="border-top-0">KDV</th>
+                                <th scope="col" class="border-top-0">Miktar</th>
+                                <th scope="col" class="border-top-0">Tutar</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td scope="row">Pasta Volkanı Pasta Maytabı 1 Adet (#70258) <br />
+                                    Ürün Kodu:<br />
+                                    Barkod:</td>
+                                <td>18.49 TL</td>
+                                <td>%10</td>
+                                <td>1</td>
+                                <td>18.49 TL</td>
+                            </tr>
+                            <tr class="border-white">
+                                <td scope="row">
+                                    Toplam Ürün Sayısı - Miktarı: 1 - 1 <br />
+                                    Toplam Desi: 0.5
+                                </td>
+                                <td colspan="100">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="border-top-0">Toplam:	</th>
+                                                <th class="border-top-0">18.49 TL</th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td>Kargo</td>
+                                            <td>18.49 TL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>İndirim</td>
+                                            <td>18.49 TL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hediye çeki</td>
+                                            <td>18.49 TL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Genel Toplam</td>
+                                            <td>18.49 TL</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12 p-4 mb-2">
+                        <span class="mdi mdi-newspaper-variant-outline ocIcons "></span><b class="ocTitle"> Sipariş Bilgileri</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ms-2">
+                        <p class="mb-3"><b>Platform</b> <span class="ms-4"> Hepsiburada </span></p>
+                        <p class="mb-3"><b>Mağaza </b><span class="ms-4"> JV Bilgi Teknolojileri </span></p>
+                        <p class="mb-3"><b>Sipariş Numarası </b><span class="ms-4"> 609529051 </span></p>
+                        <p class="mb-3"><b>Sipariş Tarihi </b><span class="ms-4"> 24.05.2024 </span></p>
+                        <p class="mb-3"><b>Sipariş Tutarı </b><span class="ms-4"> 19 TL </span></p>
+                        <p class="mb-3"><b>Ödeme Tipi </b><span class="ms-4"> Pazaryeri </span></p>
+                        <p class="mb-3"><b>Sipariş Paketi </b><span class="ms-4"> Normal </span></p>
+                        <p class="mb-3"><b>Kargo firması </b><span class="ms-4"> ABC </span></p>
+                        <p class="mb-3"><b>Sipariş Durumu </b><span
+                                class="badge badge-pill tamamClass m-2"><i
+                                    class="mdi mdi-circle-medium"></i>Tamamlanan</span></p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="mb-3"><b>Müşteri Tipi</b><span class="ms-4"> Ziyaretçi </span></p>
+                        <p class="mb-3"><b>Müşteri Adı </b><span class="ms-4"> Yusuf Köz </span></p>
+                        <p class="mb-3"><b>Telefon Numarası </b><span class="ms-4"> 5363537727 </span></p>
+                        <p class="mb-3"><b>E-posta </b><span class="ms-4"> mail@mail.com </span></p>
+                        <div class="bilgileri p-3 mb-2">
+                            <p class="mb-2 fw-bold">Müşteri Notu: <a href="" class="float-end"><i
+                                        class="mdi mdi-pencil-box"></i></a></p>
+                            <p>Lorem ipsum dolor sit amed</p>
+                        </div>
+                        <div class="bilgileri  p-3 mb-2">
+                            <p class="mb-2 fw-bold">Yönetici Notu: <a href="" class="float-end"><i
+                                        class="mdi mdi-pencil-box"></i></a></p>
+                            <p>Lorem ipsum dolor sit amed</p>
+                        </div>
+                        <p class="mb-3"><b>Promosyon </b><span class="ms-4"> mail@mail.com </span></p>
+                    </div>
+
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12 p-4 ">
+                        <span class="mdi mdi-truck-fast-outline ocIcons"></span><b class="ocTitle">Teslimat Bilgileri</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 ms-4">
+                        <strong>yasemin düşünür çançar</strong>
+                    </div>
+                    <div class="col-md-7">
+                        kemalpaşa osb mahallesi ankara asfaltı no:12/1, Kemalpaşa İzmir Türkiye
+                        05061168656
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12 p-4 ">
+                                <span class="mdi mdi-invoice-list-outline ocIcons"></span><b class="ocTitle">Fatura
+                                    Bilgileri</b>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md-3 ms-4">
+                        <strong>yasemin düşünür çançar</strong>
+                    </div>
+                    <div class="col-md-7">
+                        kemalpaşa osb mahallesi ankara asfaltı no:12/1, Kemalpaşa İzmir Türkiye
+                        05061168656
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 ms-4">
+                        <strong>VD No</strong>
+                    </div>
+                    <div class="col-md-7">
+                        10706842064
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 ms-4">
+                        <strong>Fatura Seri No</strong>
+                    </div>
+                    <div class="col-md-7">
+                        10706842064
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 ms-4">
+                        <strong>Fatura Sıra No</strong>
+                    </div>
+                    <div class="col-md-7">
+                        10706842064
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 ms-4">
+                        <strong>Ürün Seri No</strong>
+                    </div>
+                    <div class="col-md-7">
+                        10706842064
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 ms-4">
+                        <strong>Muhasebe Entegrasyonu</strong>
+                    </div>
+                    <div class="col-md-7">
+                        10706842064
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12 p-4 ">
+                                <span class="mdi mdi-clock-check-outline ocIcons"></span><b class="ocTitle">Sipariş
+                                    Hareketleri</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ms-4">
+                        <p class="mb-3"><i class="mdi mdi-progress-clock"></i> Billur Onayladı</p>
+                        <p class="mb-3"><i class="mdi mdi-progress-clock"></i> Billur Onayladı</p>
+                        <p class="mb-3"><i class="mdi mdi-progress-clock"></i> Billur Onayladı</p>
+                        <p class="mb-3"><i class="mdi mdi-progress-clock"></i> Billur Onayladı</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="" class="mr-auto p-2">Sipariş Sözleşmeleri</a>
+                <button type="button" class="btn btn-sipariş-footer"><i class="mdi mdi-message"></i> SMS /
+                    E-Posta</button>
+                <button type="button" class="btn btn-sipariş-footer"><i class="mdi mdi-refresh"></i> Durum
+                    Güncelle</button>
+                <button type="button" class="btn btn-sipariş-footer"><i
+                        class="mdi mdi-printer"></i> Yazdır</button>
+                <button type="button" class="btn btn-primary modalbtn" data-bs-dismiss="modal"><i
+                        class="mdi mdi-plus"></i> E-Fatura</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Sixth Modal -->
+<!-- Seventh Modal -->
+
+    <div id="bs-canvas-right2" class="bs-canvas bs-canvas-anim bs-canvas-right position-fixed bg-light h-100 nbocm" data-offset="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-black">
+                <div class="col-md-6">
+                    <a href="" class="mdi mdi-chevron-left float-start h2 me-2"></a>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Düzenle</h5>
+                    <p>609529051 Nolu Sipariş Detayı</p>
+                </div>
+
+                <div class="float-end">
+                    <button type="button"  class="bs-canvas-close close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+
+
+            </div>
+            <div class="modal-body text-black">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-12 p-3 mb-3 ">
+                            <span class="mdi mdi-note-text-outline ocIcons"></span><b class="ocTitle">Sipariş Bilgileri</b>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">E-posta</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Cep telefonu</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <p class="mb-3">Satış Terminali</p>
+                                <select class="form-control form-select" id="exampleFormControlSelect3">
+                                    <option>Seçilmedi</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea">A design system for enterprise-level products.</textarea>
+                                <label for="floatingTextarea">Müşteri Notu</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea">A design system for enterprise-level products.</textarea>
+                                <label for="floatingTextarea">Yönetici Notu</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-12 p-3 mb-3 ">
+                            <span class="mdi mdi-truck-fast-outline ocIcons"></span><b class="ocTitle">Teslimat Bilgileri</b>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Adı</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Soyadı</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p class="mb-3">İl</p>
+                                <select class="form-control form-select" id="exampleFormControlSelect3">
+                                    <option>Seçilmedi</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p class="mb-3">İlçe</p>
+                                <select class="form-control form-select" id="exampleFormControlSelect3">
+                                    <option>Seçilmedi</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea">A design system for enterprise-level products.</textarea>
+                                <label for="floatingTextarea">Adres</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Posta Kodu</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-12 p-3 mb-3">
+                          
+                            <span class="mdi mdi-invoice-text-outline ocIcons"></span><b class="ocTitle">Fatura Bilgileri</b>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Ünvan</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">TC Kimlik No</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p class="mb-3">Vergi Dairesi</p>
+                                <select class="form-control form-select" id="exampleFormControlSelect3">
+                                    <option>Seçilmedi</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Vergi No</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p class="mb-3">İl</p>
+                                <select class="form-control form-select" id="exampleFormControlSelect3">
+                                    <option>Seçilmedi</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p class="mb-3">İlçe</p>
+                                <select class="form-control form-select" id="exampleFormControlSelect3">
+                                    <option>Seçilmedi</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Adres</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-12 p-3 mb-3 ">
+                            <span class="h5"> E-Fatura Bilgileri</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p class="mb-3">E-Fatura Durumu</p>
+                                <select class="form-control form-select" id="exampleFormControlSelect3">
+                                    <option>Seçilmedi</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p class="mb-3">Fatura Tipi</p>
+                                <select class="form-control form-select" id="exampleFormControlSelect3">
+                                    <option>Seçilmedi</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">E-Fatura Arşiv No</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">ETTN</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-12 p-4 ">
+                            <span class="h5"> Diğer</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Fatura Seri No</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Fatura Sıra No (Sistemden Çek)</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Ürün Seri No</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Muhasebe Entegrasyonu</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="john.doe@mail.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="formFile" class="form-label">Pazaryerine Gönderilecek Fatura
+                                    (pdf)</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p class="mb-3">Fatura Gönderim Durumu</p>
+                                <select class="form-control form-select" id="exampleFormControlSelect3">
+                                    <option>Seçilmedi</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+
+
+
+
+
+
+
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-outline-secondary mr-auto p-2">Geri Dön</button>
+                <button type="button" class="btn btn-primary modalbtn"
+                    data-bs-dismiss="modal">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End seventh Modal -->
+<!-- Footer -->
+<footer class="footer mt-auto">
+    <div class="copyright bg-white">
+        <p>
+            Copyright &copy; <span id="copy-year"></span> by <a class="text-primary"
+                href="https://verysoft.com.tr" target="_blank">VerySoft</a>.
+        </p>
+    </div>
+    <script>
+        var d = new Date();
+        var year = d.getFullYear();
+        document.getElementById("copy-year").innerHTML = year;
+    </script>
+</footer>
+
+</div> <!-- End Page Wrapper -->
+</div> <!-- End Wrapper -->
+
+
+
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="plugins/simplebar/simplebar.min.js"></script>
+<script src='plugins/charts/Chart.min.js'></script>
+<script src='js/chart.js'></script>
+<script src='plugins/daterangepicker/moment.min.js'></script>
+<script src='plugins/daterangepicker/daterangepicker.js'></script>
+<script src='js/date-range.js'></script>
+<script src='plugins/toastr/toastr.min.js'></script>
+<script src="js/sleek.js"></script>
+
+
+
+
+
+
+<script>
+jQuery(document).ready(function () {
+jQuery('input[name="dateRange"]').daterangepicker({
+    autoUpdateInput: false,
+    singleDatePicker: true,
+    locale: {
+        cancelLabel: 'Clear'
+    }
+});
+jQuery('input[name="dateRange"]').on('apply.daterangepicker', function (ev, picker) {
+    jQuery(this).val(picker.startDate.format('MM/DD/YYYY'));
+});
+jQuery('input[name="dateRange"]').on('cancel.daterangepicker', function (ev, picker) {
+    jQuery(this).val('');
+});
+});
+
+$('.dropdown-menu, .dropdown-menu label').click(function (e) {
+e.stopPropagation();
+$("div.daterangepicker").click( function(e) {
+       e.stopPropagation();
+    });
+});
+$("div.daterangepicker").click( function(e) {
+e.stopPropagation();
+});
+function printTable() {
+var divToPrint = document.getElementById('vsTable');
+$(divToPrint).find('.columnSelect').remove()
+$(divToPrint).find('.actions').remove();
+newWin = window.open("");
+newWin.document.write(divToPrint.outerHTML);
+newWin.print();
+newWin.close();
+
+}
+</script>
+<script>
+jQuery(document).ready(function($) {
+var bsDefaults = {
+offset: false,
+overlay: true,
+width: '50%'
+},
+bsMain = $('.bs-offset-main'),
+bsOverlay = $('.bs-canvas-overlay');
+
+$('[data-toggle="canvas"][aria-expanded="false"]').on('click', function() {
+var canvas = $(this).data('target'),
+opts = $.extend({}, bsDefaults, $(canvas).data()),
+prop = $(canvas).hasClass('bs-canvas-right') ? 'margin-right' : 'margin-left';
+
+if (opts.width === '100%')
+opts.offset = false;
+
+$(canvas).css('width', opts.width);
+if (opts.offset && bsMain.length)
+bsMain.css(prop, opts.width);
+
+$(canvas + ' .bs-canvas-close').attr('aria-expanded', "true");
+$('[data-toggle="canvas"][data-target="' + canvas + '"]').attr('aria-expanded', "true");
+if (opts.overlay && bsOverlay.length)
+$("nav").hide();
+$("body").css("overflow", "hidden");
+bsOverlay.addClass('show');
+$(".nbocm").animate({opacity: '1'},"slow");
+return false;
+});
+
+$('.bs-canvas-close, .bs-canvas-overlay').on('click', function() {
+var canvas, aria;
+if ($(this).hasClass('bs-canvas-close')) {
+canvas = $(this).closest('.bs-canvas');
+aria = $(this).add($('[data-toggle="canvas"][data-target="#' + canvas.attr('id') + '"]'));
+if (bsMain.length)
+bsMain.css(($(canvas).hasClass('bs-canvas-right') ? 'margin-right' : 'margin-left'), '');
+} else {
+canvas = $('.bs-canvas');
+aria = $('.bs-canvas-close, [data-toggle="canvas"]');
+if (bsMain.length)
+
+bsMain.css({
+   'margin-left': '',
+   'margin-right': ''
+});
+}
+canvas.css('width', '');
+aria.attr('aria-expanded', "false");
+if (bsOverlay.length) { 
+bsOverlay.removeClass('show');
+$("nav").show();
+$("body").css("overflow", "visible");
+$(".nbocm").animate({opacity: '0'},"fast");
+}
+
+
+return false;
+});
+});
+</script>
+</body>
+
+</html>
+
+
+
